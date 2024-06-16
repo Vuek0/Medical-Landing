@@ -1,3 +1,4 @@
+
 let openOrNot = 0
 const burger = document.getElementById('burgerButton')
 const header = document.getElementById('header')

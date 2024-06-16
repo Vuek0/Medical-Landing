@@ -1,0 +1,8 @@
+$primary-color: #0be9a2;
+$bg-color: #f4f4f4;
+$dark-color: #04432f;
+
+@mixin default-list(){
+    list-style-type: none;
+    display: flex;
+}
