@@ -1,0 +1,51 @@
+@import 'variables.scss';
+.popup{
+    position: absolute;
+    // right: 20px;
+    right: -300px;
+    top: 40vh;
+    transition: 1s;
+}
+.popup__container{
+    position: relative;
+    background: $dark-color;
+    color: $primary-color;
+    width: 300px;
+    padding: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a{
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        padding: 10px;
+        text-align: center;
+    }
+}
+.popup__close{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+    span{
+        position: absolute;
+        width: 19.2px;
+        height: 2.5px;
+        background: $primary-color;
+        left: 3.33px;
+    }
+    span:nth-child(1){
+        transition: 0.5s;
+        transform: translateY(0);
+        transform: rotate(45deg);          
+    }
+    span:nth-child(2){
+        opacity: 0;
+    }
+    span:nth-child(3){
+        transition: 0.5s;
+        transform: translateY(0);
+        transform: rotate(-45deg);
+    }
+}
