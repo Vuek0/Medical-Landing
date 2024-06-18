@@ -6,7 +6,6 @@ const concat = require('gulp-concat')
 const del = require('del')
 const autoprefixer = require('gulp-autoprefixer')
 const sync = require('browser-sync').create()
-
 function html(){
   return src('src/**.html')
     .pipe(include({

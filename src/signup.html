@@ -3,12 +3,13 @@
 @@include('parts/header.html')
 <main>
 <div class="form__container">
-    <form class="form--sign">
+    <form class="form--sign" id="form--signup">
         <h2>Регистрация</h2>
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-        <input type="text" placeholder="Логин">
-        <input type="text" placeholder="Пароль">
+        <div class="form--errors"></div>
+        <input type="text" placeholder="Имя" name="name">
+        <input type="text" placeholder="Фамилия" name="surname">
+        <input type="text" placeholder="Логин" name="login">
+        <input type="password" placeholder="Пароль" name="password">
         <button type="submit">Зарегестрироваться</button>
     </form>
 </div>

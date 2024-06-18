@@ -11,16 +11,34 @@
 .form--sign{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
     gap: 10px;
     padding: 50px;
+    border-radius: 10px;
     align-items: center;
     background: $dark-color;
     color: $primary-color;
 
     input{
+        width: calc(100% - 50px);
         padding: 10px;
         outline: 2px solid $primary-color;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .form--errors{
+        display: none;
+        background: $primary-color;
+        color: $dark-color;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    input::placeholder{
+
+        z-index: 2;
+        font-size: 18px;
     }
 
     button{
@@ -28,4 +46,10 @@
         padding: 10px;
         outline: 2px solid $primary-color;
     }
+}
+
+@media(max-width: 600px){
+    // .form__container{
+    //     margin-top: 100px;
+    // }
 }

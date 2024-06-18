@@ -38,12 +38,13 @@
 </header>
 <main>
 <div class="form__container">
-    <form class="form--sign">
+    <form class="form--sign" id="form--signup">
         <h2>Регистрация</h2>
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-        <input type="text" placeholder="Логин">
-        <input type="text" placeholder="Пароль">
+        <div class="form--errors"></div>
+        <input type="text" placeholder="Имя" name="name">
+        <input type="text" placeholder="Фамилия" name="surname">
+        <input type="text" placeholder="Логин" name="login">
+        <input type="password" placeholder="Пароль" name="password">
         <button type="submit">Зарегестрироваться</button>
     </form>
 </div>
@@ -57,13 +58,15 @@
         <div class="popup__close">
             <span></span><span></span><span></span>
         </div>
-        <h3>Похоже вы уже входили в аккаунт, хотите перейти к приложению?</h3>
-        <a href="https://medical-website-tawny.vercel.app/" target="_blank">Перейти</a>
+        <h3>Похоже у вас уже есть аккаунт, хотите перейти к приложению?</h3>
+        <a href="https://medical-website-tawny.vercel.app/">Перейти</a>
     </div>
 </div>
+    <div class="background--animated"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

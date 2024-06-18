@@ -2,7 +2,11 @@
 
 
 :root{
-    background: $bg-color;
+    // background: url('./assets/images/background.svg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size:cover;
+    // background-position: 90deg;
     font-family: "Montserrat";
     overflow-x: hidden;
 }
@@ -11,6 +15,18 @@ body, html{
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.background--animated{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    background: url(./assets/images/background2.svg) 0 0;
+    background-repeat: repeat;
 }
 // p, h1, h2, h3, h4, h5, h6{
 //     font-family: "Montserrat";
@@ -31,5 +47,9 @@ body, html{
 
 
 @media(max-width: 600px){
-    
+    .background--animated{
+        background-size: cover;
+        top: 0;
+        height: 100dvh;
+    }
 }

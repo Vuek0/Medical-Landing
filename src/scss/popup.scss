@@ -1,10 +1,11 @@
 @import 'variables.scss';
 .popup{
+    opacity: 0;
     position: absolute;
     // right: 20px;
     right: -300px;
     top: 40vh;
-    transition: 1s;
+    transition: 2s;
 }
 .popup__container{
     position: relative;
