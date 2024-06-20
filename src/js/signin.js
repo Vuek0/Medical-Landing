@@ -18,11 +18,11 @@ inputs.forEach(input => {
             break;
     }
 })
-console.log();
 if(signInForm){
     signInForm.addEventListener("submit", async (e)=>{ 
         e.preventDefault();
-        if(login.value && password.value){
+        if(login.value && password.value){  
+            localStorage.setItem('isAlreadyLogined', true);
             window.location.href=`https://medical-website-tawny.vercel.app?login=${login.value}&password=${password.value}`
         } else{
             formError.style.display = "block"
