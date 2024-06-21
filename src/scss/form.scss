@@ -5,7 +5,12 @@
     align-items: center;
     height: calc(100vh - 209px);
     justify-content: center;
-
+    form{
+        transition: 1.8s;
+        opacity: 0;
+        transform: translateY(150px);
+        overflow: hidden;
+    }
 }
 
 .form--sign{

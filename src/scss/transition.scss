@@ -1,9 +1,9 @@
 .transition__image{
     position: absolute;
-    transform: rotate(230deg) translate(-160px);
+    transform: rotate(230deg) translateX(-160px);
     display: flex;
-    top: -200px;
-    width: 2000px;
+    top: 0;
+    width: 1000px;
     z-index: 9999999999999999999999;
     transition: 0.1s;
 }

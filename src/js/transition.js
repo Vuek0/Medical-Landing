@@ -1,6 +1,7 @@
 const headerLinks = document.querySelectorAll('.menu__item a');
 const pill = document.querySelector(".transition__image");
 const html = document.querySelector("html");
+const forms = document.querySelectorAll(".form__container form")
 function removePixels(value){
     return value.split('px')[0];
 
@@ -9,6 +10,10 @@ function removePixels(value){
 document.addEventListener("DOMContentLoaded", ()=>{
     const animation = localStorage.getItem("animation");
     const object = JSON.parse(animation)
+    forms.forEach(item => {
+        item.style.opacity = 1;
+        item.style.transform = "translate(0px)";
+    })
     if(animation){ 
         html.style.overflowY = "hidden";
         console.log(object.rotate);
@@ -32,7 +37,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             // pill.style.opacity = 1;
             html.style.overflowY = "auto";
             clearInterval(anim);            
-        }, 1000)
+        }, 1300)
     } else{
         pill.style.display = "none";
         pill.style.transform = "translateX(-2000px)"
@@ -43,6 +48,10 @@ headerLinks.forEach((item) => {
     item.addEventListener("click", function animationHandler(e){
         e.preventDefault();
         popup.style.opacity = 0;
+        forms.forEach(form => {
+            form.style.opacity = 0;
+            form.style.transform = "translateY(150px)";
+        })
 
         item.removeEventListener("click", animationHandler);
         item.addEventListener("click", ()=>{
@@ -50,7 +59,7 @@ headerLinks.forEach((item) => {
         })
         html.style.overflowY = "hidden";
         let rotateValue = 0;
-        let translateValue = -1500;
+        let translateValue = -1300;
         const href = item.getAttribute('href');
         // console.log(href);
         pill.style.display = "flex";
