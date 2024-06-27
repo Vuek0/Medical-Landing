@@ -1,0 +1,18 @@
+@import "variables.scss";
+footer {
+  background: #098c63;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.footer__container {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  display: flex;
+  color: $primary-color;
+}

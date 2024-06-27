@@ -1,0 +1,70 @@
+@import "variables.scss";
+
+.banner {
+}
+
+.banner__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0ac78b;
+  transition: 1.4s;
+  opacity: 0;
+  transform: translateY(150px);
+  overflow: hidden;
+  height: fit-content;
+  margin-top: 200px;
+  padding: 50px;
+  * {
+    color: $dark-color;
+  }
+  p {
+  }
+  a {
+    background: $dark-color;
+    color: $primary-color;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+  }
+}
+
+.banner__image {
+  transition: 1.8s;
+  opacity: 0;
+  transform: translateY(250px);
+  overflow: hidden;
+}
+
+.cards {
+  .cards__container {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background: $primary-color;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(150px);
+      overflow: hidden;
+    }
+
+    .card:nth-child(1) {
+      transition: 1.4s;
+    }
+    .card:nth-child(2) {
+      transition: 1.2s;
+    }
+    .card:nth-child(3) {
+      transition: 1.6s;
+    }
+  }
+}

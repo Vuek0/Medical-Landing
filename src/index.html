@@ -1,8 +1,62 @@
 @@include('parts/head.html')
 <body class="smooth-scroll">
-@@include('parts/header.html')
-<main>
-
-
-<!-- @@include('parts/popup.html') -->
-@@include('parts/close.html')
+  @@include('parts/header.html')
+  <main>
+    <div class="banner">
+      <div class="banner__container container">
+        <div class="banner__text">
+          <h1>Med Care Uz</h1>
+          <h2>Лечение в ташкенте</h2>
+          <p>
+            Мы проведём полную консультацию<br />и Лечение вашей проблемы на
+            высшем уровне
+          </p>
+          <a href="https://medical-website-tawny.vercel.app/"
+            >Записаться на приём</a
+          >
+        </div>
+        <img
+          src="./assets/images/girlphoto.png"
+          alt="doctor"
+          class="banner__image"
+        />
+      </div>
+    </div>
+    <div class="cards">
+      <div class="cards__container container">
+        <div class="card">
+          <img
+            src="./assets/icons/people.svg"
+            alt="people"
+            width="40px"
+            height="40px"
+          />
+          <h4>
+            Команда квалифицированных<br />
+            специалистов
+          </h4>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/icons/heart.svg"
+            alt="people"
+            width="40px"
+            height="40px"
+          />
+          <h4>Комфортные условия</h4>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/icons/location.svg"
+            alt="location"
+            width="40px"
+            height="40px"
+          />
+          <h4>Удобное расположение</h4>
+        </div>
+      </div>
+    </div>
+    <!-- @@include('parts/popup.html') -->
+    @@include('parts/close.html')
+  </main>
+</body>
