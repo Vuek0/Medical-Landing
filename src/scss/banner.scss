@@ -6,6 +6,7 @@
 .banner__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .banner__text {
@@ -43,8 +44,11 @@
 
 .cards {
   .cards__container {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 
     .card {
       background: $primary-color;
@@ -66,5 +70,23 @@
     .card:nth-child(3) {
       transition: 1.6s;
     }
+  }
+}
+
+@media (max-width: 1025px) {
+  .banner__container > * {
+    width: 45%;
+  }
+
+  .cards__container {
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__container > * {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 }
